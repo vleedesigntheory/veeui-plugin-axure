@@ -1,0 +1,71 @@
+{
+  "name": "veeui-plugin-axure",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "author": "veeui",
+  "description": "A Plugin of Axure for Vee UI Library",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vleedesigntheory/veeui-plugin-axure.git"
+  },
+  "keywords": [
+    "editor",
+    "rich text",
+    "wysiwyg"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.8.3",
+    "curl": "^0.1.4",
+    "moment": "^2.29.4",
+    "veeui-vue": "^0.2.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "build": {
+    "productName": "VeeUI Axure 插件",
+    "appId": "website.veeui.axure",
+    "asar": false,
+    "directories": {
+      "output": "platform"
+    },
+    "files": [
+      "dist/**/*"
+    ],
+    "mac": {
+      "icon": "public/icon.png"
+    },
+    "win": {
+      "icon": "public/icon.png"
+    },
+    "linux": {
+      "icon": "public/icon.png"
+    }
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "cross-env": "^7.0.3",
+    "electron": "^28.1.1",
+    "electron-builder": "^24.9.1",
+    "mock-service-webpack-plugin": "^5.0.1",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

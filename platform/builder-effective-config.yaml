@@ -1,0 +1,16 @@
+directories:
+  output: platform
+  buildResources: build
+productName: VeeUI Axure 插件
+appId: website.veeui.axure
+asar: false
+files:
+  - filter:
+      - dist/**/*
+mac:
+  icon: public/icon.png
+win:
+  icon: public/icon.png
+linux:
+  icon: public/icon.png
+electronVersion: 28.1.1
